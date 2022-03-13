@@ -2,7 +2,7 @@ name: build our image
 
 on:
   push:
-    branches: main
+    branches: v1.9.0
 
 jobs:
   build:
@@ -20,5 +20,5 @@ jobs:
       - name: build the image
         run: |
           docker buildx build --push \
-            --tag ruhyadi/pytorch:v1.8.1-cu101 \
+            --tag ruhyadi/pytorch:v1.9.0-cu102 \
             --platform linux/amd64 .
