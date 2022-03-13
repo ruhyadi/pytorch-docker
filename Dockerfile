@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM nvidia/cuda:10.2-base
-FROM python:3.8.12-slim-buster
+FROM python:3.8.12-buster
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
      wget && \
